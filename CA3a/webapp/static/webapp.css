@@ -1,0 +1,30 @@
+body {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	padding: 40px;
+	background: linear-gradient(115deg, #fa9cd0 10%, #56d8e4 90%);
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+input {
+  width: 8em;
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  font-size: 75%;
+}

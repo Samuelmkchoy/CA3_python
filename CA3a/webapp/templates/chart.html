@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    {% for row in data %}
+        <svg height="30" width="400">
+            <rect height="30" width="{{ row[1] }}" style="fill:rgb(0,0,255);" />
+        </svg>{{ row[0] }}<br />
+    {% endfor %}
+    <p>Average time: {{ average }}</p>
+    M: {{worlds[0]}} ({{worlds[2]}})<br />W: {{worlds[1]}} ({{worlds[3]}})
+
+    <p>
+    <button onclick="location.href='https://www.youtube.com/watch?v=BBJa32lCaaY'" type="button">Don't Click Me~</button>
+    </p>
+    <hr>
+        <p class="footer">Copyright 2022-2023 (c) by Paul Barry and edited by Ming Kit Choy.</p>
+{% endblock %}

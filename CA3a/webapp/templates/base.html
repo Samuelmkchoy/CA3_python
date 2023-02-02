@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/static/webapp.css">
+        <script src="https://unpkg.com/htmx.org@1.8.5"></script>
+     </head>
+
+    <body>
+        <h3>{{ title }}</h3>
+
+        {% block body %}
+        {% endblock %}
+        <section class="input-section" id="session-done">
+
+        </section>
+    
+        <section class="input-section" id="swimmers-done">
+        
+        </section>
+    
+        <section class="input-section" id="showevents-done">
+        
+        </section>
+    
+        <section class="content-section" id="showchart-done">
+        
+        </section>
+
+    </body>
+</html>

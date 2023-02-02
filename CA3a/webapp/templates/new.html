@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block body %}
+        
+        <form method="POST" action="/{{ url }}">
+            <div>
+                <label >{{ select_id }}:</label> <br>
+                
+                <select name="{{ select_id }}" id="{{ select_id }}"  hx-trigger="change" hx-post="/{{ url }}" hx-indicator=".htmx-indicator" hx-target="#{{ url }}-done">
+                    
+                    <option selected="selected">Select Here</option>>
+                    
+
+                    {% for name in data %}
+                    
+                    <option value="{{ name }}">{{ name }}</option>
+                    {% endfor %}
+
+                </select> 
+                <img class="htmx-indicator" width="20" src="https://htmx.org/img/bars.svg">       
+            </div>
+
+            
+             
+        </form>
+        
+{% endblock %}
